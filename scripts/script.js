@@ -38,17 +38,20 @@ menuItem.addEventListener("click", toggleDropdown)
 
 const btnMenuMobile = document.querySelector("#btn-navmenu-mobile")
 btnMenuMobile.addEventListener("click", () => {
-  const btnImage = document.querySelector("#btn-navmenu-mobile > img")
+  const btnShow = document.querySelector("#btn-show-menu")
+  const btnClose = document.querySelector("#btn-close-menu")
   const content = document.querySelector("main")
   const footer = document.querySelector("footer")
 
-  if(btnImage.classList.contains("open")){
-    btnImage.setAttribute("src", "/assets/icons/navmenu-show.svg") 
+  if(btnShow.classList.contains("hidden")){
+    btnShow.classList.remove("hidden")
+    btnClose.classList.add("hidden")
   }
   else {
-    btnImage.setAttribute("src", "/assets/icons/navmenu-close.svg")
+    btnShow.classList.add("hidden")
+    btnClose.classList.remove("hidden")
   }  
-  return btnImage.classList.toggle("open"), menu.classList.toggle("open"), content.classList.toggle("hidden--mobile"), footer.classList.toggle("hidden--mobile")
+  return menu.classList.toggle("open"), content.classList.toggle("hidden--mobile"), footer.classList.toggle("hidden--mobile")
 })
 
 const eyesPassword = document.querySelectorAll(".form__password img")
