@@ -3,12 +3,6 @@
   "version": "1.0.0",
   "description": "Teste - RD Station",
   "main": "index.html",
-  "scripts": {
-    "start": "node server.js"
-  },
   "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "node-static": "^0.7.11"
-  }
+  "license": "ISC"
 }
