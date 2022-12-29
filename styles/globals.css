@@ -158,7 +158,7 @@ header {
 .container .content--1 .content__item--1 {
 	width: 100%;
 	height: 650px;
-	background-image: url(assets/img/shape-1@desktop.svg);
+	background-image: url(../assets/img/shape-1@desktop.svg);
 	background-size: cover;
 }
 
@@ -174,7 +174,7 @@ header {
 
 .container .content__item--3 {
 	width: 100%;
-	background-image: url(assets/img/shape-2@desktop.svg);
+	background-image: url(../assets/img/shape-2@desktop.svg);
 	background-size: cover;
 }
 
@@ -261,7 +261,7 @@ article.content__item--2 .form__container select {
 	-moz-appearance: none;
 	appearance: none;
 	width: 100%;
-	background: url(assets/icons/arrowSelect.svg) 95.5% 50% no-repeat;
+	background: url(../assets/icons/arrowSelect.svg) 95.5% 50% no-repeat;
 }
 
 article.content__item--2 .form__container .form__password {
@@ -296,7 +296,7 @@ article.content__item--2 .form__container .form__button {
 	justify-content: space-between;
 	width: 100%;
 	height: 902px;
-	background-image: url(assets/img/shape-4@desktop.svg);
+	background-image: url(../assets/img/shape-4@desktop.svg);
 	background-size: cover;
 }
 
@@ -305,7 +305,7 @@ article.content__item--2 .form__container .form__button {
 	width: 600px;
 	height: 600px;
 	margin: 222px 0 0 108px;
-	background-image: url(assets/img/img-rdoer.png);
+	background-image: url(../assets/img/img-rdoer.png);
 	background-size: cover;
 }
 
@@ -414,7 +414,7 @@ article.content__item--2 .form__container .form__button {
 	align-items: center;
 	text-align: center;
 	padding: 80px 80px 80px 80px;
-	background-image: url(assets/img/bg-content-4.svg);
+	background-image: url(../assets/img/bg-content-4.svg);
 	background-size: cover;
 }
 
@@ -873,7 +873,7 @@ footer .footer__item--2 {
 	.container .content--2 .content__item--1 {
 		width: auto;
 		margin: 40px 16px 40px 16px;
-		background-image: url(assets/img/img-rdoer@1068.png);
+		background-image: url(../assets/img/img-rdoer@1068.png);
 	}
 
 	.container .content--2 .content__item--2 {
@@ -1063,13 +1063,13 @@ footer .footer__item--2 {
 
 	.container .content--1 .content__item--1 {
 		height: auto;
-		background-image: url(assets/img/shape-1@792.svg);
+		background-image: url(../assets/img/shape-1@792.svg);
 		background-size: cover;
 	}
 
 	.container .content__item--3 {
 		width: 100%;
-		background-image: url(assets/img/shape-2@792.svg);
+		background-image: url(../assets/img/shape-2@792.svg);
 		background-size: cover;
 	}
 
