@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RD Station</title>
+    <link rel="stylesheet" href="/styles/globals.css">
+    <link rel="stylesheet" href="/styles/styleguide.css">
+</head>
+<body class="text-black-2 subtitle-md">
+    <header class="header">
+        <h1>
+            <img src="/assets/img/logo.svg" alt="Logo RD Station" class="logo">
+        </h1>
+        <button class="button--navmenu" id="btn-navmenu-mobile">
+            <img src="/assets/icons/navmenu-show.svg" alt="Botão do menu mobile">
+        </button>
+        <aside class="menu">  
+            <nav class="menu__list">
+                <ul class="menu__items text-black-2">
+                    <li class="menu__item menu__item--1">
+                        <a class="menu__link menu__link--1">Menu 1</a>
+                    </li>
+                    <li class="menu__item menu__item--2">
+                        <a class=" menu__link menu__link--2" href="#">Menu 2</a>
+                        <img class="arrow" src="/assets/icons/arrowDown.svg" alt="Seta para baixo">
+                        <div class="menu__dropdown bg-white-1">
+                            <div class="menu__dropdown__list">
+                                <ul class="menu__dropdown__items menu__dropdown__item--1">
+                                    <li class="menu__dropdown__title">Metodologia</li>
+                                    <li class="menu__dropdown__item"> 
+                                        <a class="menu__link" href="#">Tudo sobre Inbound Marketing</a>
+                                    </li>
+                                </ul>
+                                <ul class="menu__dropdown__items menu__dropdown__item--2">
+                                    <li class="menu__dropdown__title">Cursos</li>
+                                    <li class="menu__dropdown__item">
+                                        <a class="menu__link" href="#">RD University</a>
+                                    </li>
+                                    <li class="menu__dropdown__item">
+                                        <a class="menu__link" href="#">Introdução ao Inbound Marketing</a>
+                                    </li>
+                                    <li class="menu__dropdown__item">
+                                        <a class="menu__link" href="#">RD Station Marketing Basic</a>
+                                    </li>
+                                </ul>
+                                <ul class="menu__dropdown__items menu__dropdown__items--3">
+                                    <li class="menu__dropdown__title">Ferramentas</li>
+                                    <li class="menu__dropdown__item">
+                                        <a class="menu__link" href="#">Avalie seu funil de vendas</a>
+                                    </li>
+                                    <li class="menu__dropdown__item">
+                                        <a class="menu__link" href="#">Compare suas métricas de Email Marketing</a>
+                                    </li>
+                                    <li class="menu__dropdown__item">
+                                        <a class="menu__link" href="#">Calcule o ROI do RD Station Marketing</a>
+                                    </li>    
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="menu__item menu__item--3">
+                        <a class="menu__link menu__link--3" href="#">Menu 3</a>
+                    </li>
+                    <li class="menu__item menu__item--4">
+                        <a class="menu__link menu__link--4" href="#">Menu 4</a>
+                    </li>
+                    <li class="menu__item menu__item--5">
+                        <a class="menu__link menu__link--5" href="#">Menu 5</a>
+                    </li>
+                </ul>
+            </nav>
+            <section class="menu__buttons subtitle-lg">
+                <button class="button--outline subtitle-lg">
+                    <span>Login</span>
+                    <img class="button__content" src="/assets/img/shadow-1.svg" alt="Borda do botão"></img>
+                </button>
+                <button class="button--primary subtitle-lg">
+                    <span>Site</span>
+                    <img class="arrow" src="/assets/icons/arrowRight.svg" alt="Seta para direita">
+                    <img class="button__content" src="/assets/img/shadow-1.svg" alt="Borda do botão"></img>
+                </button>
+            </section>
+        </aside>  
+    </header>
+    <main class="container">
+        <section class="content--1">
+            <article class="content__item--1">
+                <div class="content__text--1">
+                    <h1 class="heading-lg">Gere mais <span>oportunidades</span> para seu negócio</h1>
+                    <p class="body-lg">
+                        O RD Station Marketing é um software para sua empresa fazer campanhas melhores, nutrir Leads, 
+                        gerar oportunidades comerciais qualificadas e alcançar mais resultados.
+                    </p>
+                </div>           
+            </article>
+            <article class="content__item--2 bg-white-1">
+                <div class="loader hidden"></div>
+                <div class="toast__notify__error" id="form--toast">
+                    Erro ao enviar os dados.
+                </div>
+                <div class="toast__notify" id="form--toast">
+                    Obrigado!, entraremos em contato!
+                </div>
+                 <div class="form__container">
+                    <div class="form__container__text">
+                       <h2 class="heading-xs">Comece seus 10 dias de teste grátis do RD Station Marketing!</h2>
+                        <p class="subtitle-xs">Não precisa cadastrar cartão de crédito. 😉</p> 
+                    </div>
+                    <form class="subtitle-md" id="form-create-account" action="">
+                        <label class="form__label" for="name">Diga, qual seu nome?</label>
+                        <input class="form__input" type="text" name="name" id="name" placeholder="Insira seu nome" required/>
+                       
+                        <label class="form__label" for="email">Seu email de trabalho</label>
+                        <input class="form__input" type="email" name="email" id="email" placeholder="Insira seu e-mail" required/>
+                    
+                        <label class="form__label" for="tel">Seu telefone</label>
+                        <input class="form__input" type="tel" name="tel" id="tel" placeholder="Insira seu número de telefone com DDD" pattern="\(\d{2}\)\s*\d{5}-\d{4}" maxlength="11" required/>
+
+                        <label class="form__label" for="profession">Seu cargo de ocupação</label>
+                        <select class="form__select" name="Job" required>
+                            <option value="Sócio(a) / CEO / Proprietário(a)">
+                                Sócio(a) / CEO / Proprietário(a)
+                            </option> 
+                            <option value="Diretor(a) de Vendas">
+                                Diretor(a) de Vendas
+                            </option>
+                            <option value="Diretor(a) de Marketing">
+                                Diretor(a) de Marketing
+                            </option>
+                            <option value="Diretor(a) Outras Áreas">
+                                Diretor(a) Outras Áreas
+                            </option>
+                            <option value="Gerente de Marketing">
+                                Gerente de Marketing
+                            </option>
+                            <option value="Gerente de Vendas">
+                                Gerente de Vendas
+                            </option>
+                            <option value="Coordenador(a)/Supervisor(a) de Marketing">
+                                Coordenador(a)/Supervisor(a) de Marketing
+                            </option>
+                            <option value="Coordenador(a)/Supervisor(a) de Vendas">
+                                Coordenador(a)/Supervisor(a) de Vendas
+                            </option>
+                            <option value="Analista/Assistente de Marketing">
+                                Analista/Assistente de Marketing
+                            </option>
+                            <option value="Analista/Assistente de Vendas">
+                                Analista/Assistente de Vendas
+                            </option>
+                            <option value="Vendedor(a) / Executivo(a) de Contas">
+                                Vendedor(a) / Executivo(a) de Contas
+                            </option>
+                            <option value="Estudante">
+                                Estudante</option>
+                            <option value="Outros Cargos">
+                                Outros Cargos
+                            </option> 
+                        </select>
+                        <label class="form__label" for="password">Crie uma senha</label>
+                        <span class="form__password">
+                            <input 
+                                class="form__input" 
+                                type="password" 
+                                name="password" 
+                                id="password" 
+                                minlength="6" 
+                                maxlength="10" 
+                                autocomplete="on" 
+                                pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])[a-zA-Z0-9]{8,50}$" 
+                                required/>
+                            <img src="../assets/icons/eye-close.svg" alt="Mostrar senha">
+                        </span>
+                        <label class="form__label" for="confirmPassword">Confirme a senha</label>
+                        <span class="form__password">
+                            <input 
+                                class="form__input form__confirm_password" 
+                                type="password" 
+                                name="confirm-password" 
+                                id="confirmPassword" 
+                                minlength="6"
+                                maxlength="10"
+                                autocomplete="on" 
+                                pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])[a-zA-Z0-9]{8,50}$"
+                                required
+                            />
+                            <img src="../assets/icons/eye-close.svg" alt="Mostrar senha">
+                        </span>
+                        
+                        <label class="form__label" for="site">Qual o site da sua empresa?</label>
+                        
+                        <div class="radio__container">
+                            <div class="radio__input radio__input--1">
+                                <label for="radio-site">
+                                    <input class="form__input__radio" type="radio" name="site" id="radio-site" value="yes" checked/>
+                                    <div class="custom__radio">
+                                        <span class="custom__checkmark">
+                                            <span></span>
+                                        </span>
+                                    </div>
+                                </label>
+                            </div>
+                            <label class="form__label__radio body-md" for="radio-site">Meu site é</label>
+                        </div>
+                        
+                        <input class="form__input" type="text" name="url-site" id="site" placeholder="Insira o endereço do seu site" pattern="(?:www.|[-;:&=\+\$,\w]+@)[A-Za-z0-9.-]+((?:\/[\+~%\/.\w_]*)?\??(?:[-\+=&;%@.\w_]*)(\.\w{2,3}))" required/>
+                        
+                        <div class="radio__container">
+                            <div class="radio__input radio__input--2">
+                                <label for="radio-not-site">
+                                    <input class="form__input__radio" type="radio" name="site" value="not" id="radio-not-site"/>
+                                    <div class="custom__radio">
+                                        <span>
+                                            <span></span>
+                                        </span>
+                                    </div>
+                                </label>
+                            </div>
+                            <label class="form__label__radio body-md" for="radio-not-site">Ainda não tenho site</label>
+                        </div>    
+                        <div class="form__footer">
+                            <ul class="body-sm text-gray-1">
+                                <li>
+                                    Ao criar minha conta estou de acordo com os 
+                                    <a class="text-primary-2" href="https://legal.rdstation.com/pt-BR/rdstation-services-agreement/" target="_blank">termos de uso</a>  do software e 
+                                    <a class="text-primary-2" href="https://legal.rdstation.com/pt/privacy-policy/" target="_blank">política de privacidade</a>.
+                                </li>
+                               <li>Ao preencher o formulário, concordo em receber comunicações de acordo com meus interesses.</li>
+                               <li>*Você pode alterar suas permissões de comunicação a qualquer tempo.</li> 
+                            </ul>
+                        </div> 
+                        <div class="form__button menu__buttons">
+                            <button class="button--highlight subtitle-lg" id="btn-create-account">
+                                <span>Criar minha conta</span>
+                                <img class="button__content" src="/assets/img/shadow-2.svg" alt="Borda do botão"></img>
+                            </button>  
+                        </div>                                                               
+                    </form>
+                 </div>
+            </article>
+            <article class="content__item--3">
+                <div class="content__text--3 text-white-1">
+                    <div class="form__triangle"></div>
+                    <h2 class="heading-sm">Estaremos juntos desde o primeiro passo!</h2>
+                    <p class="body-md">
+                        Se você ainda não sabe como extrair o máximo das ações digitais, não tem problema. O <b>RD Station Marketing</b> é mais que uma ferramenta, nos importamos com os seus resultados.
+                    </p>
+                    <p>
+                        <b>Estaremos com você do planejamento até a prática!</b>
+                    </p>
+                </div>
+            </article>
+        </section>
+        <section class="content--2">
+            <article class="content__item--1">
+                <div class="content__triangle"></div>
+            </article>  
+            <article class="content__item--2">
+                <h3 class="heading-sm">Resultados previsíveis e mais clientes para sua empresa</h3>
+                <p class="subtitle-sm">Torne sua atuação no Marketing Digital mais eficaz</p>
+                <ul class="content__list body-md">
+                    
+                    <li>
+                        <img src="/assets/icons/checkmark.svg" alt="Icone Checkmark">
+                        <p><b>Ferramentas intuitivas</b> e com modelos prontos, vídeos explicativos e passo a passo guiado</p> 
+                    </li>
+                    <li>
+                        <img src="/assets/icons/checkmark.svg" alt="Icone Checkmark">
+                        <p><b>Implementação com especialistas</b> focada em planejamento e prática (nos planos Marketing Pro e Enterprise)</p> 
+                    </li>
+                    <li>
+                        <img src="/assets/icons/checkmark.svg" alt="Icone Checkmark">
+                        <p><b>Time de especialistas em Sucesso do Cliente</b>  para apoiar na otimização da estratégia em cada fase da sua jornada (nos planos Marketing Pro e Enterprise)</span>
+                    </li>
+                    <li>
+                        <img src="/assets/icons/checkmark.svg" alt="Icone Checkmark">
+                        <p><b>Suporte técnico</b> em português, espanhol e inglês para tirar dúvidas, <b>com 97% de satisfação</b> entre nossos clientes</p>
+                    </li>
+                    <li>
+                        <img src="/assets/icons/checkmark.svg" alt="Icone Checkmark">
+                        <p><b>Muito conteúdo educativo</b>, eventos, cursos da <u class="text-primary-2">RD University</u>  e comunidades para você continuar evoluindo</p>
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <section class="content--3">
+            <div class="content__items">
+                <h2 class="content__title heading-md">A ferramenta de Automação de Marketing líder na América Latina</h2>
+                <article class="content__item content__item--1 fade">
+                    <img src="/assets/icons/icon-chart.svg" alt="Icone Chart">
+                    <h3 class="heading-sm">Torne sua operação de Marketing Digital mais produtiva</h3>
+                    <p class="body-md">
+                        Chega de usar várias ferramentas separadas e perder as informações no caminho! Somos o que chamam de ferramenta tudo-em-um:
+                        reunimos os principais recursos de Marketing Digital em um só lugar para sua operação ser mais eficaz.
+                    </p>
+                </article>
+                <article class="content__item content__item--2 fade">
+                    <img src="/assets/icons/icon-bullhorn.svg" alt="Icone Bullhorn">
+                    <h3 class="heading-sm">Crie facilmente campanhas que funcionam</h3>
+                    <p class="body-md">
+                        É fácil usar o RD Station Marketing, porque suas funcionalidades são simples, mas poderosas, e contam com dezenas de modelos — 
+                        como de Landing Pages, Pop-ups, emails — para diversas ocasiões e segmentos que você pode personalizar de acordo com a sua campanha.
+                    </p>
+                </article>
+                <article class="content__item content__item--3 fade">
+                    <span class="content__shape">
+                        <img src="/assets/icons/icon-chart-network.svg" alt="Icone Chart Network">
+                    </span>
+                    <h3 class="heading-sm">Construa jornadas personalizadas e gere vendas em escala</h3>
+                    <p class="body-md">
+                        Envie a mensagem certa na hora certa e construa jornadas personalizadas que geram até 5x 
+                        mais conversões e guiam Leads até a compra. Automatize também suas tarefas e aumente a produtividade de Marketing e Vendas.
+                    </p>
+                </article>
+                <article class="content__item content__item--4 fade">
+                    <span class="content__shape">
+                        <img src="/assets/icons/icon-star.svg" alt="Icone Star">
+                    </span>
+                    <h3 class="heading-sm">Encontre automaticamente as melhores oportunidades</h3>
+                    <p class="body-md">
+                        Conheça melhor seu público, de acordo com as informações capturadas nas suas páginas e formulários. Defina critérios para identificar 
+                        automaticamente Leads com maior potencial de compra e envie para o comercial oportunidades qualificadas.
+                    </p>
+                </article>
+                <article class="content__item content__item--5 fade">
+                    <span class="content__shape">
+                        <img src="/assets/icons/icon-chart-pie.svg" alt="Icone Chart Pie">
+                    </span>
+                    <h3 class="heading-sm">Saia da incerteza e comprove resultados</h3>
+                    <p class="body-md">
+                        Ao invés de fazer uma série de ações isoladas, sem saber qual funciona, junte as informações de todos os 
+                        seus contatos e suas ações em diferentes canais com recursos de análise para provar que Marketing Digital traz mais vendas e clientes.
+                    </p>
+                </article>
+                <article class="content__item content__item--6 fade">
+                    <span class="content__shape">
+                        <img src="/assets/icons/icon-globe.svg" alt="Icone Globe">
+                    </span>
+                    <h3 class="heading-sm">Suporte ágil e na sua língua</h3>
+                    <p class="body-md">
+                        Nosso time de suporte técnico está disponível quando você precisar, com uma taxa de satisfação de 97% entre nossos clientes 
+                        e um tempo médio de resolução de 6 horas. E o melhor: tudo isso em português.
+                    </p>
+                </article>
+                <div class="carousel__dot">
+                    <span class="dot dot--1 active" onclick="currentSlide(1)"></span>
+                    <span class="dot dot--2" onclick="currentSlide(2)"></span>
+                    <span class="dot dot--3" onclick="currentSlide(3)"></span>
+                    <span class="dot dot--4" onclick="currentSlide(4)"></span>
+                    <span class="dot dot--5" onclick="currentSlide(5)"></span>
+                    <span class="dot dot--6" onclick="currentSlide(6)"></span>
+                </div>
+            </div>
+        </section>
+        <section class="content--4">
+            <article class="content__item">
+                <div class="content__container text-white-1">
+                   <h2 class="heading-md">Por que mais de 25.000 empresas escolheram o RD Station?</h2>
+                    <p class="body-md">
+                        Combinamos nossos produtos de Marketing e Vendas com pessoas que se importam com seus resultados e um ecossistema que apoia 
+                        o seu negócio do planejamento à prática.
+                    </p>
+                    <div class="menu__buttons">
+                        <button class="button--highlight subtitle-lg" id="btn-create-account">
+                            <span><a class="text-black-2" href="https://app.rdstation.com.br/signup" target="_blank">Criar conta gratuita</a></span>
+                            <img class="button__content" src="/assets/img/shadow-2.svg" alt="Borda do botão"></img>
+                        </button>  
+                    </div>  
+                </div>         
+            </article>
+        </section>
+        <section class="content--5">
+            <article class="content__item--1">
+                <div class="content__text bg-gray-4">
+                    <h3 class="heading-sm">Entenda melhor como o RD Station Marketing funciona na prática</h3>
+                    <div class="menu__buttons">
+                        <button class="button--outline subtitle-lg" id="btn-play-video">
+                            <span>Assista a demonstração</span>
+                            <img class="circle--player" src="/assets/icons/circle.svg" alt="player">
+                            <img class="button__content" src="/assets/img/shadow-2.svg" alt="Borda do botão"></img>
+                        </button>  
+                    </div>  
+                </div>
+            </article>
+            <article class="content__item--2" id="player-video">
+                <div>
+                    <img class="video" src="/assets/img/video.png" alt="Video">
+                    <img class="player" src="/assets/icons/play.svg" alt="Play" > 
+                </div>
+            </article>
+        </section>
+        <section class="content--6">
+            <article class="content__item--1">
+                <h3 class="heading-md">Torne sua operação de Marketing ainda mais poderosa</h3>
+                <p class="subtitle-sm">O RD Station Marketing se conecta as principais ferramentas nacionais e internacionais</p>
+                <div class="menu__buttons">
+                    <button class="button--primary subtitle-lg" id="btn-play-video">
+                        <span><a class="text-black-2" href="https://app.rdstation.com.br/signup" target="_blank">Criar conta gratuita</a></span>
+                        <img class="button__content" src="/assets/img/shadow-2.svg" alt="Borda do botão"></img> 
+                    </button>  
+                </div>  
+            </article>
+            <article class="content__item--2">
+                <ul class="content__list subtitle-xs">
+                    <li class="list_item--1">
+                        <img src="/assets/icons/rdstation.svg" alt="Icone RD Station">
+                        <span>RD Station CRM</span>
+                    </li>
+                    <li class="list_item--2">
+                        <img src="/assets/icons/salesforce.svg" alt="Icone Sales Force">
+                        <span>Salesforce</span>
+                    </li>
+                    <li class="list_item--3">
+                        <img src="/assets/icons/google.svg" alt="Icone Google">
+                        <span>Google</span>
+                    </li>
+                    <li class="list_item--4">
+                        <img src="/assets/icons/facebook.svg" alt="Icone Facebook">
+                        <span>Facebook</span>
+                    </li>
+                    <li class="list_item--5">
+                        <img src="/assets/icons/linkedin.svg" alt="Icone LinkedIn">
+                        <span>LinkedIn</span>
+                    </li>
+                    <li class="list_item--6"> 
+                        <img src="/assets/icons/Wordpress.svg" alt="Icone Wordpress">
+                        <span>Wordpress</span>
+                    </li>
+                    <li class="list_item--7">
+                        <img src="/assets/icons/Hotmart.svg" alt="Icone Hotmart">
+                        <span>Hotmart</span>
+                    </li>
+                    <li class="list_item--8">
+                        <img src="/assets/icons/pagseguro.svg" alt="Icone PagSeguro">
+                        <span>PagSeguro</span>
+                    </li>
+                    <li class="list_item--9">
+                        <img src="/assets/icons/shopify.svg" alt="Icone Shopify">
+                        <span>Shopify</span>
+                    </li>
+                    <li class="list_item--10">
+                        <img src="/assets/icons/zapier.svg" alt="Icone Zapier">
+                        <span>Zapier</span>
+                    </li>
+                </ul>
+            </article>
+        </section>
+    </main>
+    <footer class="bg-primary-2">
+        <article class="footer__item--1">
+            <h1><img src="/assets/img/logo-2.svg" alt="Logo RD Station"></h1>
+            <ul class="footer__social">
+                <li>
+                    <a href="https://twitter.com/rd_station" target="_blank">
+                        <img src="/assets/icons/twitter.svg" alt="Twitter">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/ResultadosDigitais/" target="_blank">
+                        <img src="/assets/icons/facebook-icon.svg" alt="Facebook">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/company/resultadosdigitais" target="_blank">
+                        <img src="/assets/icons/linkedin-icon.svg" alt="Linkedin">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/resdigitais/" target="_blank">
+                        <img src="/assets/icons/instagram.svg" alt="Instagram">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/channel/UC5lPKvmw6-DFya_qreisENQ" target="_blank">
+                        <img src="/assets/icons/youtube.svg" alt="Youtube">
+                    </a>
+                </li>
+            </ul>
+        </article>
+        <article class="footer__item--2">
+            <span class="body-sm">© 2021 <b>RD Station</b>. <a class="text-black-2" href="">Política de Privacidade.</a> </span>
+        </article>
+    </footer>
+    <div class="modal__container hidden"></div>
+    <iframe class="modal__content hidden" src="" allow="autoplay"></iframe>
+
+    <script src="/scripts/script.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+</body>
+</html>
