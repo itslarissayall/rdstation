@@ -1,42 +1,87 @@
 @import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@800;900&family=Nunito+Sans:wght@400;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@800;900&family=Nunito+Sans&display=swap');
 
-.button--primary {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	padding: 8px 16px;
-	width: 122px;
-	height: 36px;
-	background: #19C1CE;
+
+.btn.btn-primary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: #19C1CE;
 	border: 2px solid #19C1CE;
-	cursor: pointer;
 }
 
-.button--outline {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	padding: 8px 16px;
-	width: 94px;
-	height: 36px;
-	border: 2px solid #212429;
-	cursor: pointer;
+.btn.btn-primary:hover {
+	background: #07E5EB;
 }
 
-.button--highlight {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	padding: 8px 16px;
-	width: 100%;
-	height: 36px;
-	background: #F2BF4E;
+.btn.btn-secondary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:  rgba(0,0,0,0);
+    border-color: #000;
+    position: relative;
+}
+
+.btn.btn-secondary:hover {
+	background: #00000029; 
+}
+
+.btn.btn-highlight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F2BF4E;
 	border: 2px solid #F2BF4E;
-	cursor: pointer;
+    position: relative;
+}
+
+.btn.btn-highlight:hover {
+	background: #F4CA6D;
+}
+
+.btn:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: calc(100% + 2px);
+    left: calc(0% - 2px);
+    width: calc(100% + (2 * 2px));
+    border-top: 4px solid #000;
+    border-left: 8px solid rgba(0,0,0,0);
+    border-right: 8px solid rgba(0,0,0,0);
+    height: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.btn {
+    margin: 0 10px 0 10px;
+    color: #000;
+    border: 2px solid rgba(0,0,0,0);
+    padding: 10px 22px;
+    border-radius: 0;
+    font-size: 14px;
+    font-weight: 800;
+    width: auto;
+    position: relative;
+    font-size: 1rem;
+    line-height: 1rem;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    -webkit-transition: background .4s,border .4s,color .4s;
+    transition: background .4s,border .4s,color .4s;
+    white-space: break-spaces;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn.btn-sm {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    width: 100%;
+    height: 36px;
 }
 
 .heading-lg {

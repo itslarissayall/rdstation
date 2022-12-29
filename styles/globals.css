@@ -67,7 +67,7 @@ header {
 	display: inline-flex;
 	text-align: center;
 	text-transform: uppercase;
-	max-width: 100%;
+	justify-content: center;
 }
 
 .menu__buttons button {
@@ -92,7 +92,11 @@ header {
 	bottom: -7px;
 }
 
-.menu__buttons button img.arrow,
+.menu__buttons a .arrow {
+	margin-left: 12px;
+	width: 14px;
+	height: 9px;
+}
 .container .content--5 .content__item--1 .circle--player {
 	margin-left: 12px;
 }
@@ -434,7 +438,7 @@ article.content__item--2 .form__container .form__button {
 }
 
 .container .content--5 .content__item--1 .content__text>h3 {
-	margin-right: 800px;
+	margin-right: 720px;
 	margin-top: 0;
 }
 
@@ -581,6 +585,15 @@ footer .footer__item--2 {
 	padding: 40px 108px 40px 108px;
 }
 
+a#btn-play-video {
+	margin-left: 0;
+}
+
+body > header > aside > .menu__buttons {
+	max-width: 400px;
+	width: 100%;
+}
+
 .loader {
 	position: absolute;
     margin: auto;
@@ -721,6 +734,9 @@ footer .footer__item--2 {
 
 	.container .content--6 .content__item--2 ul > li {
 		padding: 20px;
+	}
+	#player-video > div > img.video {
+		height: 340px;
 	}
 }
 
@@ -1043,6 +1059,18 @@ footer .footer__item--2 {
 		width: 100%;
 	}
 
+	#player-video > div > img.video { 
+		height: auto;
+	}
+
+	.container .content--4 > article > div > div > a {
+		height: 50px;
+	}
+
+	body > header > aside > .menu__buttons {
+		max-width: 100%;
+	}
+
 	@keyframes fade {
 		from {
 			opacity: .4
@@ -1082,9 +1110,15 @@ footer .footer__item--2 {
 	}
 
 	.menu__buttons button .button__content {
-		height: 7px;
+		height: 8px;
 		z-index: 50;
-		bottom: -8px;
+		bottom: -7px;
+	}
+}
+
+@media only screen and (max-width: 562px) {
+	.container .content--5 .content__item--1 .content__text  {
+		height: 250px;
 	}
 }
 
@@ -1093,5 +1127,9 @@ footer .footer__item--2 {
 		width: 100%;
 		height: 550px;
 		transform: none;
+	}
+
+	.container .content--5 .content__item--2 {
+		height: 150px;
 	}
 }
