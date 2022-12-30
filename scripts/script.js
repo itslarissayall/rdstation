@@ -63,12 +63,12 @@ for(var i=0; i < inputsPassword.length; i++) {
 
   eyesPassword[i].addEventListener("mousedown", () => {
     input.setAttribute("type", "text")
-    eye.setAttribute("src", "/assets/icons/eye-open.svg")
+    eye.setAttribute("src", "assets/icons/eye-open.svg")
   })
 
   eyesPassword[i].addEventListener("mouseup", () => {
     input.setAttribute("type", "password")
-    eye.setAttribute("src", "/assets/icons/eye-close.svg")
+    eye.setAttribute("src", "assets/icons/eye-close.svg")
   })
 }
 
