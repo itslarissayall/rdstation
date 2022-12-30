@@ -594,6 +594,10 @@ body > header > aside > .menu__buttons {
 	width: 100%;
 }
 
+.eye--close {
+	cursor: pointer;
+}
+
 .loader {
 	position: absolute;
     margin: auto;
